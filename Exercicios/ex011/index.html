@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinamicas</title>
+</head>
+<body>
+    <h1>Imagens Dinamicas</h1>
+        <p>
+            Tente abrir esse site em varios dispositivos diferentes!  ou simplesmente aumente e diminua o tamanho do seu navegador!
+
+        </p>
+
+            <picture>
+                <source media ="(max-width: 750px)" srcset="imagens/Imagem-p.png">
+                <source media="(max-width: 1050px)" srcset="imagens/Imagem-m.png">
+                <img src="imagens/Imagem-g.png" alt="Imagem fleexivel tam G">
+        
+            </picture>
+    
+    <h1>Reproduzindo Audio</h1>
+        <p> vamos aprender a reproduzir audio em html 5
+        </p>
+            <audio src="midia/Moonlight in Mexico - Jimena Contreras.mp3" controls autoplay></audio>
+            <audio src="midia/Moonlight in Mexico - Jimena Contreras.ogg" type="audio/ogg"></audio>
+            <audio src="midia/Moonlight in Mexico - Jimena Contreras.wav" type="audio/wav"></audio>
+        <p>
+            infelizmente seu navegador nao consegue carregar mp3 <a href="midia/Moonlight in Mexico - Jimena Contreras.mp3">clique aqui</a> para baixar o arquivo mp3
+        </p>
+        
+</body>
+</html>
