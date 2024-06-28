@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>uso de tabelas grandes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            }
+        table{
+            border-collapse: collapse;
+            padding: 10px;
+            
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        td.num{
+            text-align: right;
+        }
+        thead,tfoot{
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <h1>TABELAS GRANDES</h1>
+    <!--    
+    ANATOMIA PARA TABELAS GRANDES
+        table
+            thead
+                tr  td th
+            tbody
+                tr td th
+            tfoot
+                tr td th
+    -->
+        <table>
+            <thead>
+                <th>Estado</th>
+                <th>População</th>
+
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sao paulo</td>
+                    <td class="num">45919049</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td class="num">4150258</td>
+                </tr>
+                <tr>
+                    <td>Espiriro Santo</td>
+                    <td class="num">4500333</td>
+                </tr>
+                <tr>
+                    <td>Rio de janeiro</td>
+                    <td class="num">11588965</td>
+                </tr>
+                <tr>
+                    <td>Parana</td>
+                    <td class="num">6550470</td>
+                </tr>
+                <tr>
+                    <td>Santa Catarina</td>
+                    <td class="num">8695241</td>
+                </tr>
+                <tr>
+                    <td>Amazonas</td>
+                    <td class="num">8555662</td>
+                </tr>
+                <tr>
+                    <td>Roraima</td>
+                    <td class="num">2369741</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td class="num">6987123</td>
+                </tr>
+                <tr>
+                    <td>Tocantins</td>
+                    <td class="num">6547892</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande do Sul</td>
+                    <td class="num">45698712</td>
+                </tr>
+                <tr>
+                    <td>Mato Grosso</td>
+                    <td class="num">6456123</td>
+                </tr>
+                <tr>
+                    <td>Piaui</td>
+                    <td class="num">1236987</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <th>Total de Habitantes</th>
+                <th class="num">222456123</th>
+
+            </tfoot>
+        </table>
+    
+</body>
+</html>
