@@ -9,8 +9,9 @@
             font-family: Arial, Helvetica, sans-serif;
             }
         table{
+            width: 500px;
             border-collapse: collapse;
-            padding: 10px;
+            
             
         }
         td, th{
@@ -23,6 +24,16 @@
         thead,tfoot{
             background-color: gray;
         }
+        caption{
+            font-size: 1em;
+            font-weight:  bold;
+            background-color: lightgray;
+            padding: 10px;
+        }
+        tbody> tr:nth-child(odd) {
+            background-color: rgba(164, 170, 180, 0.13);
+
+        }
     </style>
 </head>
 <body>
@@ -30,6 +41,7 @@
     <!--    
     ANATOMIA PARA TABELAS GRANDES
         table
+            caption
             thead
                 tr  td th
             tbody
@@ -38,9 +50,10 @@
                 tr td th
     -->
         <table>
+            <caption>População das Unidades Federativas</caption>
             <thead>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
 
             </thead>
             <tbody>
@@ -98,7 +111,7 @@
                 </tr>
             </tbody>
             <tfoot>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <th class="num">222456123</th>
 
             </tfoot>
