@@ -48,14 +48,23 @@
                 tr td th
             tfoot
                 tr td th
+
+            a ordem do TBODY THEAD e TFOOT  nao interfere na semantica do objeto!
     -->
+        
         <table>
             <caption>População das Unidades Federativas</caption>
             <thead>
                 <th scope="col">Estado</th>
                 <th scope="col">População</th>
+                
 
             </thead>
+            <tfoot>
+                <th scope="row">Total de Habitantes</th>
+                <th class="num">222456123</th>
+
+            </tfoot>
             <tbody>
                 <tr>
                     <td>Sao paulo</td>
@@ -110,11 +119,7 @@
                     <td class="num">1236987</td>
                 </tr>
             </tbody>
-            <tfoot>
-                <th scope="row">Total de Habitantes</th>
-                <th class="num">222456123</th>
-
-            </tfoot>
+          
         </table>
     
 </body>
